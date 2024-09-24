@@ -42,7 +42,7 @@ equalOperator.addEventListener("click", (e) => {
 })
 
 const numPattern = /^[0-9+\-*/=.()]*$/;
-document.addEventListener("keyup", (e) => {
+document.addEventListener("keydown", (e) => {
 
     e.preventDefault();
 
@@ -107,7 +107,7 @@ function keyCheck(key){
                 setTimeOut(btn,"c","cPress")
             }else if(key == "="){
                 setTimeOut(btn,"equals","equalsPress")
-            }else if(btn.classList.contains("numBtn")){
+            }else if(btn.classList.contains("numBtn") || btn.classList.contains("numBtnPress")){
                 setTimeOut(btn,"numBtn","numBtnPress")
 
             }else{
