@@ -42,14 +42,14 @@ equalOperator.addEventListener("click", (e) => {
 })
 
 const numPattern = /^[0-9+\-*/=.()]*$/;
-document.addEventListener("keydown", (e) => {
+document.addEventListener("keyup", (e) => {
 
     e.preventDefault();
 
     //console.log(e.key);
     
     result.style.fontSize = "36px"
-    
+
     if(numPattern.test(e.key)){
         operands.innerHTML += e.key;
         keyCheck(e.key)
