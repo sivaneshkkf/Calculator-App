@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+  </head>
+  <body class="font-poppins font-medium">
+    <div class="main max-w-sm h-auto mx-auto text-white bg-zinc-900 rounded-lg p-6 overflow-hidden shadow-lg shadow-zinc-900 border-2 border-zinc-800">
+      <div>
+        Calculator
+      </div>
+      <div class="screen my-3 leading-loose pt-5 pb-10 text-right">
+         <p class="text-zinc-500">45+55+25</p>
+         <p class="text-4xl">325</p>
+      </div>
+      <div class="btnCon flex">
+        <div class="grid grid-cols-3 gap-5 w-10/12">
+            <button class="shadowBtn bg-red-700 px-6 py-3 rounded-lg">C</button>
+            <button class="numBtn shadowBtn">(</button>
+            <button class="numBtn shadowBtn">)</button>
+            <button class="numBtn shadowBtn">7</button>
+            <button class="numBtn shadowBtn">8</button>
+            <button class="numBtn shadowBtn">9</button>
+            <button class="numBtn shadowBtn">4</button>
+            <button class="numBtn shadowBtn">5</button>
+            <button class="numBtn shadowBtn">6</button>
+            <button class="numBtn shadowBtn">1</button>
+            <button class="numBtn shadowBtn">2</button>
+            <button class="numBtn shadowBtn">3</button>
+            <button class="numBtn shadowBtn col-span-2">0</button>
+            <button class="numBtn shadowBtn">.</button>
+        </div>
+        <div class="operatorBtnCon flex flex-col ml-5 gap-5 w-2/12">
+            <button class="operatorBtn shadowBtn">/</button>
+            <button class="operatorBtn shadowBtn">x</button>
+            <button class="operatorBtn shadowBtn">-</button>
+            <button class="operatorBtn shadowBtn">+</button>
+            <button class="operatorBtn shadowBtn !bg-lime-600">=</button>
+        </div>
+
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
