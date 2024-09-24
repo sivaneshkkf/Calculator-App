@@ -28,7 +28,6 @@ btnCon.addEventListener("click", (e) => {
     }
     else{
         if(txt){
-            operands.style.visibility="visible"
             result.style.fontSize = "36px"
             operands.innerHTML += txt
             calculate();
@@ -47,8 +46,9 @@ document.addEventListener("keydown", (e) => {
 
     e.preventDefault();
 
-    console.log(e.key);
+    //console.log(e.key);
     
+    result.style.fontSize = "36px"
     
     if(numPattern.test(e.key)){
         operands.innerHTML += e.key;
