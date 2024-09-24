@@ -12,6 +12,9 @@ export default {
       colors: {
         btn: '#222427',
         secondary: '#ecc94b',
+      },
+      animation: {
+        'pulse-fast': 'pulse 1s linear infinite',
       }
     },
     

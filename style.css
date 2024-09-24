@@ -17,5 +17,5 @@
 }
 
 .operatorBtn{
-  @apply bg-orange-700 px-6 py-3 rounded-lg font-poppins text-center hover:bg-orange-800 hover:shadow-sm hover:shadow-black
+  @apply bg-orange-700 px-6 py-3 rounded-lg font-poppins text-center hover:bg-orange-600 hover:shadow-sm hover:shadow-black
 }
