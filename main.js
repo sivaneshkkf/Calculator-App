@@ -8,9 +8,8 @@ const result =document.getElementById("result")
 
 const allBtn=document.querySelectorAll("button")
 
-// allBtn.forEach(btn => {
-//     console.log(btn)
-// })
+let enterable = true;
+
 
 const btnCon=document.querySelector(".btnCon")
 
@@ -19,7 +18,7 @@ btnCon.addEventListener("click", (e) => {
     if(txt === "C"){
         operands.innerHTML="";
         calculate();
-    }else if(txt === "="){
+    }else if(txt === "=" && enterable){
         operands.innerHTML = "";
         result.style.fontSize = "50px"
     }else if(txt === "x"){
@@ -37,16 +36,12 @@ btnCon.addEventListener("click", (e) => {
 })
 
 
-equalOperator.addEventListener("click", (e) => {
-    
-})
+
 
 const numPattern = /^[0-9+\-*/=.()]*$/;
 document.addEventListener("keydown", (e) => {
 
     e.preventDefault();
-
-    //console.log(e.key);
     
     result.style.fontSize = "36px"
 
@@ -62,11 +57,22 @@ document.addEventListener("keydown", (e) => {
         calculate();
     }
     if(e.key == "Enter"){
-        operands.innerHTML="";
-        result.style.fontSize = "50px"
-        keyCheck(e.key)
+        if(enterable){
+            operands.innerHTML="";
+            result.style.fontSize = "50px"
+            keyCheck(e.key)
+        }else{
+            operands.style.color="#ef4444"
+        }
+        
     }
     
+})
+
+document.addEventListener("keyup", (e) => {
+    if(e.key == "Enter"){
+        operands.style.color="#71717a";
+    }
 })
 
 
@@ -78,10 +84,12 @@ function calculate(){
         }else{
             result.innerHTML = "0"
         }
+        enterable = true;
         operands.style.color="#71717a"
     } catch (error) {
         console.error("Error evaluating expression:", error.message);
-        operands.style.color="#ef4444"
+        //operands.style.color="#ef4444"
+        enterable = false;
     }
  
 }
