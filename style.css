@@ -15,6 +15,34 @@
 .txtAnim{
   transition: font-size 0.2s ease-in-out;
 }
+
+.historyTransformout{
+  
+  transform: translateX(150px);
+}
+.historyTransformin{
+  transform: translateX(0);
+  
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* Scroll bar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a; /* Scroll bar track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e293b; /* Scroll bar thumb color */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #111827; /* Hover effect for the thumb */
+}
+
+
 .numBtn{
   @apply bg-btn px-8 py-3 rounded-lg font-poppins text-center shadowBtn hover:bg-zinc-800 hover:shadow-sm hover:shadow-black
 }
