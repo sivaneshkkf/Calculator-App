@@ -1,5 +1,41 @@
 import './style.css'
 
+// Classes
+
+class CalculateHistory {
+    constructor(history){
+        this.history = []
+    }
+
+    addHistory(hist){
+        this.history.push(hist);
+    }
+
+    getHistory(){
+        return this.history;
+    }
+
+    removeAll(){
+        this.history.length=0;
+    }
+}
+
+
+class Data{
+    constructor(operand,result){
+        this.operand = operand
+        this. result = result
+    }
+
+    getOperand(){
+        return this.operand
+    }
+
+    getResult(){
+        return this.result
+    }
+}
+
 const equalOperator= document.getElementById("equalOperator")
 
 const operands=document.getElementById("operands")
@@ -238,3 +274,12 @@ showBtn.addEventListener("click", (e) => {
 closeBtn.addEventListener("click", (e) => {
     historyEl.classList.replace("translate-x-0","translate-x-52")
 })
+
+
+
+
+
+
+
+
+

@@ -3,8 +3,6 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./data/history.js",
-    "./data/data.js",
   ],
   theme: {
     extend: {
