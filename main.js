@@ -18,9 +18,14 @@ btnCon.addEventListener("click", (e) => {
     if(txt === "C"){
         operands.innerHTML="";
         calculate();
-    }else if(txt === "=" && enterable){
-        operands.innerHTML = "";
-        result.style.fontSize = "50px"
+    }else if(txt === "="){
+        if(enterable){
+            operands.innerHTML="";
+            result.style.fontSize = "50px"
+            keyCheck(e.key)
+        }else{
+            operands.style.color="#ef4444"
+        }
     }else if(txt === "x"){
         operands.innerHTML += "*"
         calculate();
