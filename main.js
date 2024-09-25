@@ -11,7 +11,7 @@ const allBtn=document.querySelectorAll("button")
 let enterable = true;
 
 
-const history = new CalculateHistory()
+const history = new CalculateHistory();
 
 const btnCon=document.querySelector(".btnCon")
 
