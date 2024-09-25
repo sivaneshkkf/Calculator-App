@@ -230,7 +230,6 @@ function refreshUI(){
     }
 
     historyArr.reverse();
-    console.log(historyArr.length);
     
     if (historyArr.length === 0) {
         emptyEl.classList.replace("hidden", "block");
@@ -268,12 +267,21 @@ const showBtn=document.getElementById("showBtn")
 const closeBtn=document.getElementById("closeBtn")
 
 showBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
     historyEl.classList.replace("translate-x-52","translate-x-0")
+    historyEl.focus();
 })
 
 closeBtn.addEventListener("click", (e) => {
     historyEl.classList.replace("translate-x-0","translate-x-52")
 })
+
+
+document.addEventListener('click', (e) => {
+    if (!historyEl.contains(e.target)) {
+        historyEl.classList.replace("translate-x-0","translate-x-52")
+    }
+});
 
 
 
