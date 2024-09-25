@@ -40,6 +40,13 @@ btnCon.addEventListener("click", (e) => {
 
 })
 
+btnCon.addEventListener("mouseup", (e) => {
+    setTimeout(() => {
+        operands.style.color="#71717a";
+    }, 200);
+    
+});
+
 
 
 
