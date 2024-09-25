@@ -12,6 +12,9 @@
   ,2px 0px 6px rgb(15, 15, 15,0.8), -1px -4px 6px rgb(49, 49, 49);
 }
 
+.txtAnim{
+  transition: font-size 0.2s ease-in-out;
+}
 .numBtn{
   @apply bg-btn px-8 py-3 rounded-lg font-poppins text-center shadowBtn hover:bg-zinc-800 hover:shadow-sm hover:shadow-black
 }
