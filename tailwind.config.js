@@ -20,7 +20,8 @@ export default {
       keyframes: {
         blink: {
           '0%, 100%': { opacity: '0' },  
-          '50%': { opacity: '1' },
+          '70%': { opacity: '1' },
+          '80%': { opacity: '0' },
         },
       },
       blur: {

@@ -7,48 +7,73 @@
     <title>Calculator App</title>
   </head>
   <body class="font-poppins font-medium h-screen flex items-center ">
-    <div class="main max-w-sm h-fit mx-auto text-white bg-zinc-900 rounded-2xl p-6 overflow-hidden shadow-lg shadow-zinc-900 border-2 border-zinc-800">
+    <div
+      class="main max-w-sm h-fit mx-auto text-white bg-zinc-900 rounded-2xl p-6 overflow-hidden shadow-lg shadow-zinc-900 border-2 border-zinc-800 relative">
       <div class="flex gap-2 items-center uppercase text-sm">
-        
+
         <span> <img src="./cal.png" alt="icon" class="w-8 h-7">
         </span>
         Calculator
         <div class="relative flex justify-center w-1.5 h-1.5 items-center">
-          <div class="w-1 h-1 bg-green-600 rounded-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 filter blur-[2px] animate-blink"></div>
 
-          <div class="w-1 h-1 bg-green-600 rounded-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-blink"></div>
+          <div
+          class="w-1 h-1 bg-zinc-950 rounded-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+          <div
+            class="w-1 h-1 bg-green-600 rounded-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 filter blur-[2px] animate-blink"></div>
+
+          <div
+            class="w-1 h-1 bg-green-600 rounded-full absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-blink"></div>
+
         </div>
       </div>
-      <div class="screen my-3 leading-loose pt-5 pb-10 text-right overflow-hidden">
-         <p id="operands" class="text-zinc-500 text-sm tracking-wider h-6"></p>
-         <p id="result" class="text-4xl transition duration-2000 animate-pulse-fast txtAnim">0</p>
+      <div
+        class="screen my-3 leading-loose pt-5 pb-10 text-right overflow-hidden">
+        <p id="operands" class="text-zinc-500 text-sm tracking-wider h-6"></p>
+        <p id="result"
+          class="text-4xl transition duration-2000 animate-pulse-fast txtAnim">0</p>
       </div>
       <div class="btnCon flex">
         <div class="grid grid-cols-3 gap-5 w-10/12">
-            <button id="btn" class="c">C</button>
-            <button id="btn" class="numBtn">(</button>
-            <button id="btn" class="numBtn">)</button>
-            <button id="btn" class="numBtn">7</button>
-            <button id="btn" class="numBtn">8</button>
-            <button id="btn" class="numBtn">9</button>
-            <button id="btn" class="numBtn">4</button>
-            <button id="btn" class="numBtn">5</button>
-            <button id="btn" class="numBtn">6</button>
-            <button id="btn" class="numBtn">1</button>
-            <button id="btn" class="numBtn">2</button>
-            <button id="btn" class="numBtn">3</button>
-            <button id="btn" class="numBtn col-span-2">0</button>
-            <button id="btn" class="numBtn">.</button>
+          <button id="btn" class="c">C</button>
+          <button id="btn" class="numBtn">(</button>
+          <button id="btn" class="numBtn">)</button>
+          <button id="btn" class="numBtn">7</button>
+          <button id="btn" class="numBtn">8</button>
+          <button id="btn" class="numBtn">9</button>
+          <button id="btn" class="numBtn">4</button>
+          <button id="btn" class="numBtn">5</button>
+          <button id="btn" class="numBtn">6</button>
+          <button id="btn" class="numBtn">1</button>
+          <button id="btn" class="numBtn">2</button>
+          <button id="btn" class="numBtn">3</button>
+          <button id="btn" class="numBtn col-span-2">0</button>
+          <button id="btn" class="numBtn">.</button>
         </div>
         <div class="operatorBtnCon flex flex-col ml-5 gap-5 w-2/12">
-            <button id="btn" class="operatorBtn">/</button>
-            <button id="btn" class="operatorBtn">x</button>
-            <button id="btn" class="operatorBtn">-</button>
-            <button id="btn" class="operatorBtn">+</button>
-            <button class="equals" id="equalOperator">=</button>
+          <button id="btn" class="operatorBtn">/</button>
+          <button id="btn" class="operatorBtn">x</button>
+          <button id="btn" class="operatorBtn">-</button>
+          <button id="btn" class="operatorBtn">+</button>
+          <button class="equals" id="equalOperator">=</button>
         </div>
 
       </div>
+
+      <!-- <div
+        class="history absolute top-0 right-0 p-2 bg-zinc-900 rounded-2xl border border-zinc-600 h-full">
+        <div class="container p-1 border-b border-zinc-600 max-w-48">
+          <div>
+            <p class="text-xs mb-3">HISTORY</p>
+          </div>
+          <ul>
+            <li class="text-right break-after-auto">
+              <p class="text-zinc-500 text-xs tracking-wider">25</p>
+              <p class="text-sm transition duration-2000">100</p>
+            </li>
+
+          </ul>
+        </div>
+      </div> -->
     </div>
     <script type="module" src="/main.js"></script>
   </body>
